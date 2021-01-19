@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sign up.</title>
+    <link rel="stylesheet" type="text/css" href="instagram2.css" />
+  </head>
+  <body>
+    <div class="box">
+      <br />
+      <br />
+      <center><img src="i4.png" alt="image error" width="170px;" /></center>
+      <div class="btnbox">
+        <div id="btn"></div>
+        <button type="button" onclick="mobile()" class="tooglebtn" id="p">
+          PHONE NUMBER
+        </button>
+        <button type="button" class="tooglebtn" id="e" onclick="email()">
+          EMAIL ADDRESS
+        </button>
+      </div>
+
+      <from id="mobile" class="file">
+        <input
+          class="input"
+          type="tel"
+          name=""
+          value=""
+          placeholder="Phone number"
+        /><br />
+        <span
+          >You may receive SMS updates from Instagram and can opt out at any
+          time.
+        </span>
+        <input type="submit" name="" value="Next" class="submit" />
+      </from>
+      <form id="email" class="file">
+        <input
+          class="input"
+          type="email"
+          name=""
+          value=""
+          placeholder="Email address"
+        />
+        <input type="submit" name="" value="Next" class="submit" />
+      </form>
+
+      <br />
+      <hr />
+      <br />
+      <span>Already have an account?</span><a href="instagram.html">Log in.</a>
+    </div>
+
+    <script>
+      var x = document.getElementById("mobile");
+      var y = document.getElementById("email");
+      var z = document.getElementById("btn");
+
+      function email() {
+        x.style.left = "-950px";
+        y.style.left = "3px";
+        z.style.left = "240px";
+      }
+      function mobile() {
+        x.style.left = "3px";
+        y.style.left = "950px";
+        z.style.left = "0px";
+      }
+    </script>
+  </body>
+</html>
